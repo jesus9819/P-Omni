@@ -1,0 +1,212 @@
+.content{
+    
+    font-family: 'ProximaNova', sans-serif;
+}
+.img-product{
+    width:100%;
+    height: 305px;
+    margin: auto;
+   
+}
+
+
+.titulo {
+    font-family: Proxima Nova;
+    font-size: 30px;
+    line-height: 30px;
+    
+    /* or 100% */
+    
+    text-align: center ;
+    
+    color: #030303;
+}
+
+.product{
+    padding: 0 10px;
+}
+
+.calificacion{
+    text-align: center  ;
+}
+
+
+.coste{
+    text-align: center;
+    color: #33333A;
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Proxima Nova;
+}
+.talla-producto,.combo{
+   width: 100%;
+    align-items: center;
+    padding: 10px 0px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 12px;
+    justify-content: start;
+}
+.talla-span,.combo-span{
+    padding-right: 20px;
+    font-size: 12px;
+  }
+  .btn-talla button,.contadorUp,.contadorDown,.cantidadInput {
+    border: 1px solid #DEDEDE;
+    color: #455A64;
+    width: 44px;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+  }
+  .btn-combo button{
+      width: 68px;
+      border: 1px solid #DEDEDE;
+    color: #455A64;
+    height: 40px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+  }
+  .btn-talla button .talla-l{
+    background: #33333A !important;
+    color: #DEDEDE;
+  }
+  .content-cantidad{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+  }
+
+  .txt-cantidad{
+    font-family: Proxima Nova;
+    font-size: 12px;
+    line-height: 40px;
+  }
+  .control-cantidad{
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    margin-left: 10px;
+  }
+  
+  .contadorUp,.contadorDown{
+      width: 30px;
+      font-size: 18px;
+      border: none ;
+  }
+  .cantidadInput{
+      width: 80px;
+      height: 35px;
+      -webkit-appearance: textfield !important;
+      -moz-appearance: textfield !important;
+      appearance: textfield !important;
+      text-align: center;
+  }
+  .añadirCarrito{
+      margin-top: 25px;
+    width: 100%;
+   
+  }
+  .btn-añadir{
+    height: 40px;
+    width: 100%;
+    background: #33333A;
+    color: white;
+    border: none;
+    box-shadow: 0px -2px 0px #f9f8f6;
+    margin: auto;
+    display: block; 
+  }
+  .content-descripcion{
+      margin-top: 20px;
+
+  }
+  .tlt-descripcion{
+      color: 000000;
+      font-family: Proxima Nova;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: left;
+
+  }
+.txt-descripcion{
+    font-family: Proxima Nova;
+font-size: 16px;
+line-height: 20px;
+/* or 125% */
+
+text-align: justify;
+
+color: #666666;
+}
+.txt-descripcion-leerMas{
+    font-family: Proxima Nova;
+font-size: 12px;
+line-height: 20px;
+/* identical to box height, or 167% */
+
+letter-spacing: 2px;
+text-transform: uppercase;
+
+color: #33333A;
+
+}
+.Content-sugerido{
+    margin-top: 20px;
+}
+.tlt-sugerido{
+    font-family: Proxima Nova;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+color: #263238;
+}
+.list-sugeridos{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.producto-sugerido{
+    display: inline-block;
+    margin: 3px;
+}
+.img-producto-sugerido{
+ height: 168px;
+width: 150.68524169921875px;
+border-radius: 0px;
+}
+
+.ttl-producto-sugerido{
+    font-family: Proxima Nova;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+
+
+color: #263238;
+}
+.coste-producto-sugerido{
+    font-family: Proxima Nova;
+font-size: 16px;
+line-height: 19px;
+
+color: #9D9D9D;
+}
+.pie-page{
+    background: #33333A;
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    border-radius: 0px;
+
+}

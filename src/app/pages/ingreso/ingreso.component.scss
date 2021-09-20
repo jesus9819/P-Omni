@@ -1,0 +1,289 @@
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.contenedor-principal {
+  min-height: 100%;
+  width: 100%;
+  font-size: 20px;
+  background: url(../../../assets/img/ingreso/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'dosis', sans-serif;
+}
+.menu-img{
+    margin-left: auto;
+    display: block;
+    padding-top: 24px;
+    padding-right: 16px;
+}
+.logo{
+    padding-top: 28px;
+  
+    
+}
+.logo-img{  
+    margin: 0 auto;
+    display: block;
+    
+}
+.contenedor-formulario{
+  padding: 35px 20px 35px;
+}
+
+
+.div-selector-form{
+
+    align-items: center;
+    height: 40px;
+    display: flex;
+    
+    
+}
+.div-selector-form li{
+    display:inline; 
+    
+}
+.tab-slider--trigger{
+    flex: 1;
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.esconder_tabs{
+  display: none;
+}
+
+
+.tab-slider--trigger.login{
+background: linear-gradient(254deg, transparent 15px, #3a30618f 10px);
+    border-top-left-radius: 10px;
+}
+.tab-slider--trigger.register{
+    background: linear-gradient(100deg, transparent 12px, #3a30618f 10px);
+    border-top-right-radius: 10px;
+    }
+
+.tab-slider--trigger.login.active{
+    margin-right:-20px;
+    background: linear-gradient(250deg, transparent 16px, #3A3061 10px);
+    border-top-left-radius: 10px;
+}
+
+.tab-slider--trigger.register.active {
+    margin-left: -20px;
+    background: linear-gradient(102deg, transparent 13px, #3A3061 10px);
+    border-top-right-radius: 10px;
+    
+  }
+  .tabs-body{
+    height: 349px;
+    background: #3A3061;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    border-radius: 0px 0px 6px 6px;
+  }
+    .tabs-body .tab2{
+        height:441px !important; 
+
+    }
+  
+  .Suscripcion {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 14px;}
+
+    .Suscripcion input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .Suscripcion .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .Suscripcion .slider:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: -2px;
+      bottom: -3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .Suscripcion input:checked + .slider {
+      background-color: #2196F3;
+    }
+
+    .Suscripcion input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    .Suscripcion input:checked + .slider:before {
+      -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+      transform: translateX(20px);
+    }
+
+    .Suscripcion .slider.round {
+      border-radius: 34px;
+    }
+
+    .Suscripcion .slider.round:before {
+      border-radius: 50%;
+    }
+    .tabs-body{
+        height: 100%;
+        padding: 10px 20px;
+        }
+    
+    
+      .tabs-body  .campos {
+            padding-top: 20px;
+        }
+
+      .tabs-body .campos .campos-requeridos{
+        justify-content: end;
+        display: flex;
+        align-items: center;
+        
+      }
+      
+      .mensaje-requerido{
+       
+        color: #2FC0BA !important;
+        font-size: 12px !important;
+        margin-left: 5px;
+      }
+    
+        .tabs-body .campos  label{
+            
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #F5F5F5;
+            font-weight: 400;
+          }
+    
+    
+          .tabs-body .campos input[type="password"]{
+            -webkit-text-security: square !important;
+            font-size: 20px;
+            
+          }
+    
+          .tabs-body .campos input:focus-visible{
+            outline: none;
+          }
+    
+          .tabs-body .campos input{
+            border: none;
+            background: transparent;
+            color: #FFFFFF80;
+            border-bottom: 1px solid #F5F5F5;
+            height: 40px;
+            width: 100%;
+          }
+    
+          .tabs-body .campos button{
+            
+            border: none;
+            border-radius: 24px;
+            height: 44px;
+            width: 279px;
+            left: 0px;
+            top: 0px;
+            color: #fff;
+            font-size: 18px;
+            display: block;
+            margin: 0px auto;
+            background: linear-gradient(90deg, #8DE7ED 2.31%, #2FCEC5 100%);
+          }
+    
+          .tabs-body .campos span{
+            font-size: 16px;
+            line-height: 22px;
+            color: #F5F5F5;
+          }
+    
+          .tabs-body .campos .input_validator{
+            border-bottom: 1px solid #2FCCC3;
+          }
+    
+          .tabs-body  .campos span.validator{
+            font-size: 12px;
+            color: #2FC0BA;
+            text-transform: uppercase;
+            display:table;
+            margin-left: auto;
+          }
+    
+          .tabs-body .campos.centrar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    
+          .tabs-body .campos.centrar span{
+            padding-left: 15px;
+          }
+    
+    
+    
+          .tabs-body .campos .forgot-password{
+            
+            padding-bottom: 20px;
+            align-items: center;
+            display: block;
+            text-align: center;
+          }
+    
+          .tabs-body .campos .padding{
+            padding: 20px 0px;
+          }
+    
+    .mensaje-alerta{
+      width: 310px;
+      height: 300px;
+      display: block;
+      margin: 0px auto;
+      margin-top: 40px;
+      background: #37D0C8;
+    }
+
+
+    .contenido-mensaje{
+        text-align: center;
+        color: #392F63;
+        font-size: 20px;
+
+        display: block;
+        margin: 0px auto;
+        padding-top: 104px;
+        padding-bottom: 30px;
+    }
+        
+    .img-mensaje{
+      margin-left: 30px;
+      margin-top: 15px;
+    }
+  
+

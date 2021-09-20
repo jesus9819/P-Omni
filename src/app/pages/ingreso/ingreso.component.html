@@ -1,0 +1,122 @@
+<div class="contenedor-principal">
+    <div class="menu-ingreso">
+        <img class="menu-img" src="../../../assets/img/ingreso/Menu.png" alt="">
+    </div>
+    <div class="logo">
+    <img class="logo-img" src="../../../assets/img/ingreso/Logo.png" alt="">    
+    </div>
+    <div class="contenedor-formulario" [ngClass]="{'esconder_tabs': muestraTabs != true}" *ngIf="muestraTabs">
+        <div class="div-selector-form"> 
+            
+                <div class="tab-slider--trigger login" [ngClass]="{'active': vista_tab == 'tabIngreso'}"  (click)="vista_tab ='tabIngreso'">Ingreso</div>
+                <div class="tab-slider--trigger register" [ngClass]="{'active': vista_tab == 'tabRegistro'}" (click)="vista_tab ='tabRegistro'">Registro</div>
+               
+          
+        </div>
+        
+    
+    <div class="contenedor-tabs" [ngSwitch]="vista_tab" >
+        <div *ngSwitchCase="'tabIngreso'">
+            <div class="tabs-body">
+                <form (ngSubmit)="login(ingreso)" #ingreso="ngForm">
+                    <div class="campos">
+                        <label>EMAIL</label>
+                        <input type="email" autocomplete="false" name="email" ngModel="" required autocomplete="off" placeholder="ejemplo@email.com">
+                        <div class="campos-requeridos" *ngIf="ingreso.submitted && ingreso.controls['email'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <label>password</label>
+                        <input type="password" autocomplete="false" name="password" ngModel="" required placeholder="">
+                        <div class="campos-requeridos" *ngIf="ingreso.submitted && ingreso.controls['password'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos centrar">
+                        <label class="Suscripcion">
+                          <input type="checkbox">
+                          <span class="slider round"></span>
+                        </label>
+                        <span>Suscribirse al Newsletter</span>
+                      </div>
+                      <div class="campos">
+                          <button type="submit">Ingresar</button>
+                      </div>
+                      <div class="campos forgot-password"> 
+                        <span>Olvide Contraseña</span>
+                          </div>
+                    </form>
+
+            </div>
+          </div>
+          <div class="tabs-body" *ngSwitchCase="'tabRegistro'">
+            <div>
+                <form (ngSubmit)="register(registro)" #registro="ngForm">
+                    <div class="campos">
+                        <label>NOMBRE</label>
+                        <input type="text" autocomplete="false" name="nombre" ngModel="" required placeholder="nombre">
+                        <div class="campos-requeridos" *ngIf="registro.submitted && registro.controls['nombre'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <label>APELLIDO</label>
+                        <input type="text" autocomplete="false" name="apellido" ngModel="" required placeholder="">
+                        <div class="campos-requeridos" *ngIf="registro.submitted && registro.controls['apellido'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <label>EMAIL</label>
+                        <input type="email" autocomplete="false" name="email" ngModel="" required placeholder="">
+                        <div class="campos-requeridos" *ngIf="registro.submitted && registro.controls['email'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos">
+                        <label>password</label>
+                        <input type="password" autocomplete="false" name="password" ngModel="" required placeholder="">
+                        <div class="campos-requeridos" *ngIf="registro.submitted && registro.controls['password'].errors">
+                            <img src="../../../assets/img/ingreso/required.svg">
+                            <span class="mensaje-requerido">REQUERIDO</span>
+                        </div>
+                    </div>
+                    <div class="campos centrar">
+                    <label class="Suscripcion">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>  
+                      </label>
+                      <span>Suscribirse al Newsletter.</span>
+                      </div>
+                      <div class="campos">
+                          <button type="submit">Ingresar</button>
+                      </div>
+                    </form>
+                
+          </div>
+    </div>
+    
+
+</div>
+</div>
+
+
+
+<div class="mensaje-alerta" *ngIf="!muestraTabs">
+    
+    <div class="contenido-mensaje">
+        <div>SUCESS</div>
+        <div><img class="img-mensaje" src="../../../assets/img/ingreso/Success.png"></div>
+    </div>
+
+</div>
+
+
+
+</div>
